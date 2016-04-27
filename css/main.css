@@ -364,12 +364,19 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+* {
+  box-sizing: border-box; }
+
 body {
+  background: whitesmoke;
   font-family: 'Raleway', sans-serif; }
 
 .wrapper {
   width: 90%;
   margin: 0 auto; }
+
+.wrapper-padding {
+  padding: 4rem 0; }
 
 .clearfix:before,
 .clearfix:after {
@@ -379,25 +386,102 @@ body {
 .clearfix {
   clear: both; }
 
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  color: #424652; }
+
+h1 {
+  font-size: 3.5rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h3 {
+  font-size: 2.75rem; }
+
+h4 {
+  font-size: 2.25rem; }
+
+h6 {
+  font-size: 2rem; }
+
+p, li {
+  font-size: 2.1rem;
+  line-height: 2.75rem; }
+
+p, ul, ol {
+  margin: 0 0 1.6em 0; }
+
 #main_navigation {
+  background: #383838;
   padding: 2.5em 5%;
   border-bottom: 1px solid #E9E9E9; }
   #main_navigation .name {
     font-weight: 100;
-    font-size: 1em;
+    font-size: 1.4em;
     text-transform: uppercase;
     border: 2px solid #E9E9E9;
     padding: 1em;
     text-decoration: none;
-    color: #424652;
-    float: left; }
+    color: #E9E9E9;
+    float: left;
+    font-weight: 500; }
   #main_navigation nav {
     float: right;
     padding-top: 1.5rem; }
     #main_navigation nav a {
-      color: #424652;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 1px;
+      color: #E9E9E9;
       text-decoration: none;
-      margin: 0 1rem;
-      font-size: 1; }
+      text-transform: uppercase;
+      margin: 0 1rem; }
+      #main_navigation nav a:hover {
+        color: white; }
+
+#main_footer {
+  background: #383838;
+  padding: 2.5em 5%;
+  border-top: 1px solid #E9E9E9; }
+  #main_footer .copyright {
+    float: left;
+    margin: 0;
+    font-size: 18px;
+    color: whitesmoke; }
+  #main_footer nav {
+    float: right; }
+    #main_footer nav i {
+      font-size: 18px;
+      color: #E9E9E9;
+      margin-left: 2em;
+      padding-bottom: 0.2em; }
+      #main_footer nav i:hover {
+        color: white; }
+
+.col-1, .col-2, .col-3 {
+  float: left; }
+
+.col-1 {
+  width: 45%;
+  padding: 0 5% 0 2.5%; }
+
+.col-2, .col-3 {
+  width: 27,5%;
+  padding: 0 2.5%; }
+
+.hoemepage_content h2 {
+  font-size: 1.1rem;
+  text-transform: uppercase; }
+.hoemepage_content hr {
+  width: 3em;
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid #8bc6db;
+  margin: 2rem 0; }
+.hoemepage_content h3 {
+  font-size: 1.35em;
+  font-weight: 400;
+  margin-bottom: 0.5em; }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,14 +3,20 @@ $dark: #424652;
 $light: #9a9da4;
 $hightlight: #8bc6db;
 $border: #E9E9E9;
-
+$footer : #383838;
+* { box-sizing: border-box}
 body {
+	background: whitesmoke;
 	font-family: 'Raleway', sans-serif;
 }
 
 .wrapper {
 	width: 90%;
 	margin: 0 auto;
+}
+
+.wrapper-padding {
+	padding: 4rem 0;
 }
 
 .clearfix:before,
@@ -22,28 +28,91 @@ body {
 .clearfix{
 	clear: both
 }
+h1 , h2 , h3, h4 , h5, h6 , p , ul , li {
+	color : $dark;
+}
+h1 {
+	font-size: 3.5rem;
+}
+h2 {
+	font-size : 3rem;
+}
+h3 {
+	font-size : 2.75rem;
+}
+h4 {
+	font-size: 2.25rem;
+}
+h6 {
+	font-size : 2rem;
+}
 
+p, li {
+	font-size : 2.1rem;
+	line-height : 2.75rem;
+}
+p, ul, ol {
+	margin: 0 0 1.6em 0 ;
+}
 #main_navigation {
+	background: $footer;
 	padding: 2.5em 5%;
 	border-bottom: 1px solid $border;
 .name {
 	font-weight: 100 ;
-	font-size: 1em ;
+	font-size: 1.4em ;
 	text-transform: uppercase ;
 	border: 2px solid $border ; 	
 	padding: 1em ; 
 	text-decoration: none ;
-	color: $dark;
+	color: $border;
 	float:left;
+	font-weight: 500;
 }
 nav {
 	float: right;
 	padding-top: 1.5rem;
 	a{
-		color :$dark;
+		font-weight: 600;
+		font-size : 13px;
+		letter-spacing: 1px;
+		color : $border;
 		text-decoration: none;
+		text-transform : uppercase;
 		margin: 0 1rem;
-		font-size: 1;
+		// font-size: 1rem;
+		&:hover { color : white;
+		}
 	}
 }
 }
+
+#main_footer {
+	background: $footer;
+	padding: 2.5em 5%;
+	border-top: 1px solid $border;
+	.copyright{ 
+
+		float : left;
+		margin : 0;
+		font-size: 18px;
+		color : whitesmoke ;
+		
+			}
+			nav {
+				float : right;
+
+			i {
+				font-size : 18px;
+				color : $border ;
+				margin-left : 2em;
+				padding-bottom : 0.2em;
+
+			
+			&:hover {
+				color: white;
+			}
+		}
+}
+}
+@import 'mainpage';
