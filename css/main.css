@@ -371,7 +371,7 @@ body {
   background: whitesmoke;
   font-family: 'Raleway', sans-serif; }
 
-.wrapper {
+.wrapper-inner {
   width: 90%;
   margin: 0 auto; }
 
@@ -458,6 +458,19 @@ p, ul, ol {
       #main_footer nav i:hover {
         color: white; }
 
+#page_title {
+  font-weight: 1400;
+  text-align: center;
+  border-bottom: 1px solid #383838;
+  padding: 3em 0;
+  font-size: 20px;
+  text-transform: uppercase; }
+
+.skinny_wrapper {
+  width: 80%;
+  max-width: 760px;
+  margin: 0 auto; }
+
 .col-1, .col-2, .col-3 {
   float: left; }
 
@@ -483,5 +496,44 @@ p, ul, ol {
   font-size: 1.35em;
   font-weight: 400;
   margin-bottom: 0.5em; }
+
+#post-wrapper {
+  padding: 3em 0; }
+  #post-wrapper .post {
+    text-align: center; }
+    #post-wrapper .post .date {
+      font-size: 0.9em; }
+    #post-wrapper .post h2 {
+      margin-bottom: 0;
+      text-align: center;
+      font-size: 2em;
+      text-transform: uppercase; }
+      #post-wrapper .post h2 a {
+        -moz-transition: color 0.2s 0.02s ease;
+        -o-transition: color 0.2s 0.02s ease;
+        -webkit-transition: color 0.2s 0.02s ease;
+        color: #222;
+        text-decoration: none;
+        color: #424652; }
+        #post-wrapper .post h2 a:hover {
+          color: #ffeb3b; }
+    #post-wrapper .post hr {
+      margin: 4em auto;
+      color: black; }
+
+.pagination:before,
+.pagination:after {
+  content: "";
+  display: table; }
+
+.pagination:after {
+  clear: box; }
+
+.pagination {
+  text-align: center;
+  margin: 3em 0 0 0; }
+  .pagination a, .pagination .previous_page, .pagination .current, .pagination .next_page {
+    padding: 0.75em 1em;
+    margin: 0, 25em; }
 
 /*# sourceMappingURL=main.css.map */

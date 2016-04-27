@@ -1,0 +1,49 @@
+#post-wrapper {
+	padding : 3em 0 ;
+	.post {
+		text-align : center;
+		.date {
+			font-size : 0.9em;
+
+		}
+
+		h2 {
+			margin-bottom: 0;
+			text-align: center;
+			font-size: 2em;
+			text-transform: uppercase;
+			a {-moz-transition: color 0.2s 0.02s ease;
+ -o-transition: color 0.2s 0.02s ease;
+ -webkit-transition: color 0.2s 0.02s ease;
+ color:#222;
+				text-decoration: none;
+				color : $dark;
+				&:hover {
+					color : #ffeb3b ;
+				
+				}
+			}
+		}
+		hr {
+			margin : 4em auto ;
+			color : black ;
+		}
+	}
+}
+
+.pagination:before,
+.pagination:after {
+	content :"";
+	display : table;
+}
+.pagination:after {
+	clear:box;
+}
+.pagination {
+	text-align : center;	
+	margin : 3em 0 0 0;
+	a, .previous_page, .current, .next_page {
+		padding : 0.75em 1em;
+		margin : 0 , 25em ;
+	}
+}

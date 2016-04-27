@@ -10,7 +10,8 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
-.wrapper {
+
+.wrapper-inner {
 	width: 90%;
 	margin: 0 auto;
 }
@@ -87,6 +88,7 @@ nav {
 }
 }
 
+
 #main_footer {
 	background: $footer;
 	padding: 2.5em 5%;
@@ -115,4 +117,20 @@ nav {
 		}
 }
 }
-@import 'mainpage';
+#page_title {
+	font-weight : 1400;
+	text-align: center ;
+	border-bottom : 1px solid $footer;
+	padding : 3em 0 ;
+	font-size : 20px;	
+	text-transform: uppercase;
+}
+
+.skinny_wrapper {
+	width: 80%;
+	max-width: 760px;
+	margin: 0 auto ;
+}
+
+@import 'mainpage' ;
+@import 'posts_projects' ;
